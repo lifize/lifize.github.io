@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>lifize — музыкальная группа</title>
+  <meta name="description" content="Официальный сайт группы lifize: релизы, концерты, мерч.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">lifize</a>
+
+      <nav class="nav" aria-label="Основное меню">
+        <a href="#releases">Релизы</a>
+        <a href="#tour">Концерты</a>
+        <a href="#merch">Шмотки</a>
+        <a href="#band">Группа</a>
+      </nav>
+
+      <div class="themes" role="group" aria-label="Тема оформления">
+        <button class="swatch" data-theme-btn="dark"  style="--c:#1c1d20" aria-label="Тёмно-серая" title="Тёмно-серая"></button>
+        <button class="swatch" data-theme-btn="light" style="--c:#ffffff" aria-label="Белая" title="Белая"></button>
+        <button class="swatch" data-theme-btn="beige" style="--c:#e8dcc6" aria-label="Бежевая" title="Бежевая"></button>
+        <button class="swatch" data-theme-btn="sage"  style="--c:#a9c3a5" aria-label="Шалфей" title="Шалфей"></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero container">
+      <h1 class="hero__title">lifize</h1>
+      <p class="hero__text">Андеграунд группа, из Самарской области</p>
+    </section>
+
+    <section id="releases" class="section container">
+      <h2 class="section__title">Релизы</h2>
+      <div class="grid grid--albums">
+        <article class="album">
+          <div class="album__cover"><span class="badge">Релиз · 13 ноября 2026</span><img class="cover-img" src="img/releases/bezrassudstvo.jpg" alt="Обложка" onerror="this.remove()"></div>
+          <h3>Безрассудство</h3>
+          <p class="muted">Single</p>
+        </article>
+        <article class="album">
+          <div class="album__cover"><span class="badge">Релиз · 2026 / 2027</span><img class="cover-img" src="img/releases/prazdnik.jpg" alt="Обложка" onerror="this.remove()"></div>
+          <h3>Праздник, которого не было</h3>
+          <p class="muted">EP</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tour" class="section container">
+      <h2 class="section__title">Концерты</h2>
+      <div class="tour-empty">
+        <p><strong>Ближайших концертов пока нет</strong></p>
+        <p class="muted">Следите за обновлениями: как только появятся новые даты, мы расскажем об этом здесь.</p>
+      </div>
+    </section>
+
+    <section id="merch" class="section container">
+  <h2 class="section__title">Шмотки</h2>
+  <div class="grid grid--merch">
+    <article class="card">
+      <div class="card__img card__img--tee">
+        <span class="badge">Скоро</span>
+        <img class="cover-img" src="img/merch/tshirt.jpg" alt="Футболка lifize or maily!" onerror="this.remove()">
+      </div>
+      <h3>Футболка lifize or maily!</h3>
+      <p class="muted">Футболка-оверсайз</p>
+      <div class="card__foot"><span class="price">Пока недоступно</span></div>
+    </article>
+  </div>
+</section>
+
+    <section id="band" class="section container">
+      <h2 class="section__title">Группа</h2>
+      <p class="band__lead">lifize — андеграунд группа из Самарской области. Состав пока собирается, и мы ищем гитариста и басиста.</p>
+      <div class="grid grid--band">
+        <article class="member">
+          <div class="member__avatar"><img class="member__photo" src="img/band/solist.jpg" alt="Solist, Guitar" onerror="this.remove()"></div>
+          <h3>Даня</h3>
+          <p class="muted">Солист, гитара</p>
+        </article>
+        <article class="member member--empty">
+          <div class="member__avatar"><span>?</span><img class="member__photo" src="img/band/guitar.jpg" alt="Guitar" onerror="this.remove()"></div>
+          <h3>Гитарка</h3>
+          <p class="muted">Место свободно</p>
+        </article>
+        <article class="member">
+          <div class="member__avatar"><img class="member__photo" src="img/band/drums.jpg" alt="Drums" onerror="this.remove()"></div>
+          <h3>Олег</h3>
+          <p class="muted">Барабанщик</p>
+        </article>
+        <article class="member member--empty">
+          <div class="member__avatar"><span>?</span><img class="member__photo" src="img/band/bass.jpg" alt="Bass guitar" onerror="this.remove()"></div>
+          <h3>Бас гитарка</h3>
+          <p class="muted">Место свободно</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo">lifize</span>
+      <span class="muted">© 2026 lifize. Все права защищены.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
