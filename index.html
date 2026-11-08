@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>lifize — музыкальная группа</title>
-  <meta name="description" content="Официальный сайт группы lifize: релизы, концерты, мерч.">
+  <meta name="description" content="Официальный сайт группы lifize">
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@400;600&display=swap" rel="stylesheet">
@@ -24,34 +25,42 @@
         <a href="#band">Группа</a>
       </nav>
 
-      <div class="themes" role="group" aria-label="Тема оформления">
-        <button class="swatch" data-theme-btn="dark"  style="--c:#1c1d20" aria-label="Тёмно-серая" title="Тёмно-серая"></button>
-        <button class="swatch" data-theme-btn="light" style="--c:#ffffff" aria-label="Белая" title="Белая"></button>
-        <button class="swatch" data-theme-btn="beige" style="--c:#e8dcc6" aria-label="Бежевая" title="Бежевая"></button>
-        <button class="swatch" data-theme-btn="sage"  style="--c:#a9c3a5" aria-label="Шалфей" title="Шалфей"></button>
-      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Сменить тему" title="Сменить тему">
+        <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="currentColor"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon icon--moon" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
     </div>
   </header>
 
   <main id="top">
 
-    <section class="hero container">
-      <h1 class="hero__title">lifize</h1>
-      <p class="hero__text">Андеграунд группа, из Самарской области</p>
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1 class="hero__title">lifize</h1>
+        <p class="hero__text">Андеграунд группа, из Самарской области</p>
+        <div class="stream">
+          <a class="btn stream__btn" href="#" target="_blank" rel="noopener"><img class="stream__logo" src="img/logos/yandex-music.png" alt="" onerror="this.remove()"><span>Яндекс Музыка</span></a>
+          <a class="btn stream__btn" href="#" target="_blank" rel="noopener"><img class="stream__logo" src="img/logos/spotify.svg" alt="" onerror="this.remove()"><span>Spotify</span></a>
+          <a class="btn stream__btn" href="#" target="_blank" rel="noopener"><img class="stream__logo" src="img/logos/apple-music.svg" alt="" onerror="this.remove()"><span>Apple Music</span></a>
+          <a class="btn stream__btn" href="#" target="_blank" rel="noopener"><img class="stream__logo" src="img/logos/vk-music.png" alt="" onerror="this.remove()"><span>VK Музыка</span></a>
+          <a class="btn stream__btn" href="#" target="_blank" rel="noopener"><img class="stream__logo" src="img/logos/youtube-music.svg" alt="" onerror="this.remove()"><span>YouTube Music</span></a>
+          <a class="btn stream__btn" href="#" target="_blank" rel="noopener"><img class="stream__logo" src="img/logos/zvuk.png" alt="" onerror="this.remove()"><span>Звук</span></a>
+        </div>
+      </div>
     </section>
 
     <section id="releases" class="section container">
       <h2 class="section__title">Релизы</h2>
       <div class="grid grid--albums">
         <article class="album">
-          <div class="album__cover"><span class="badge">Релиз · 13 ноября 2026</span><img class="cover-img" src="img/releases/bezrassudstvo.jpg" alt="Обложка" onerror="this.remove()"></div>
+          <div class="album__cover"><img class="cover-img" src="img/releases/bezrassudstvo.jpg" alt="Обложка" onerror="this.remove()"></div>
           <h3>Безрассудство</h3>
-          <p class="muted">Single</p>
+          <p class="muted">Single · 13 ноября 2026</p>
         </article>
-        <article class="album">
-          <div class="album__cover"><span class="badge">Релиз · 2026 / 2027</span><img class="cover-img" src="img/releases/prazdnik.jpg" alt="Обложка" onerror="this.remove()"></div>
+        <article class="album album--empty">
+          <div class="album__cover"><span class="album__q">?</span><img class="cover-img" src="img/releases/prazdnik.jpg" alt="Обложка" onerror="this.remove()"></div>
           <h3>Праздник, которого не было</h3>
-          <p class="muted">EP</p>
+          <p class="muted">EP · 2026 / 2027</p>
         </article>
       </div>
     </section>
@@ -60,7 +69,7 @@
       <h2 class="section__title">Концерты</h2>
       <div class="tour-empty">
         <p><strong>Ближайших концертов пока нет</strong></p>
-        <p class="muted">Следите за обновлениями: как только появятся новые даты, мы расскажем об этом здесь.</p>
+        <p class="muted">Как только будет наш первый концерт, появятся даты, Объявим их в ТГК, и на сайте!</p>
       </div>
     </section>
 
@@ -106,12 +115,27 @@
       </div>
     </section>
 
+    <section id="info" class="section container">
+      <h2 class="section__title">Инфо</h2>
+      <div class="info">
+        <div class="info__item"><span class="muted">Ближайший релиз</span><strong>Безрассудство, 13 ноября 2026</strong></div>
+        <div class="info__item">
+          <span class="muted">Мы в соцсетях</span>
+          <div class="social">
+            <a class="social__btn" href="https://t.me/lifize" target="_blank" rel="noopener">ТГК</a>
+            <a class="social__btn" href="https://www.tiktok.com/@gruppalifize" target="_blank" rel="noopener">TikTok</a>
+            <a class="social__btn" href="https://www.youtube.com/@gruppalifize" target="_blank" rel="noopener">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
       <span class="logo">lifize</span>
-      <span class="muted">© 2026 lifize. Все права защищены.</span>
+      <span class="muted">© 2026 lifize | Все права защищены.</span>
     </div>
   </footer>
 
