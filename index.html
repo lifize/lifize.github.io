@@ -4,7 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>lifize — музыкальная группа</title>
-  <meta name="description" content="Официальный сайт группы lifize">
+  <meta name="description" content="Официальный сайт группы lifize: андеграунд-группа из Самарской области.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="lifize">
+  <meta property="og:description" content="Андеграунд-группа из Самарской области. Релизы, мерч и новости.">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
   <script>document.documentElement.classList.add("js")</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,15 +43,16 @@
     <section class="hero">
       <div class="container hero__inner">
         <h1 class="hero__title">lifize</h1>
-        <p class="hero__text">Андеграунд группа, из Самарской области</p>
+        <p class="hero__text">Андеграунд-группа из Самарской области</p>
         <div class="stream">
-          <a class="btn stream__btn" href="#" target="_blank" rel="noopener"><img class="stream__logo" src="img/logos/yandex-music.png" alt="" onerror="this.remove()"><span>Яндекс Музыка</span></a>
-          <a class="btn stream__btn" href="#" target="_blank" rel="noopener"><img class="stream__logo" src="img/logos/spotify.svg" alt="" onerror="this.remove()"><span>Spotify</span></a>
-          <a class="btn stream__btn" href="#" target="_blank" rel="noopener"><img class="stream__logo" src="img/logos/apple-music.svg" alt="" onerror="this.remove()"><span>Apple Music</span></a>
-          <a class="btn stream__btn" href="#" target="_blank" rel="noopener"><img class="stream__logo" src="img/logos/vk-music.png" alt="" onerror="this.remove()"><span>VK Музыка</span></a>
-          <a class="btn stream__btn" href="#" target="_blank" rel="noopener"><img class="stream__logo" src="img/logos/youtube-music.svg" alt="" onerror="this.remove()"><span>YouTube Music</span></a>
-          <a class="btn stream__btn" href="#" target="_blank" rel="noopener"><img class="stream__logo" src="img/logos/zvuk.png" alt="" onerror="this.remove()"><span>Звук</span></a>
+          <a class="btn stream__btn" href="https://music.yandex.ru/artist/25630419" target="_blank" rel="noopener"><img class="stream__logo" src="img/logos/yandex-music.png" alt="" onerror="this.remove()"><span>Яндекс Музыка</span></a>
+          <span class="btn stream__btn stream__btn--soon" aria-disabled="true" title="Пока недоступно"><img class="stream__logo" src="img/logos/spotify.svg" alt="" onerror="this.remove()"><span>Spotify</span></span>
+          <span class="btn stream__btn stream__btn--soon" aria-disabled="true" title="Пока недоступно"><img class="stream__logo" src="img/logos/apple-music.svg" alt="" onerror="this.remove()"><span>Apple Music</span></span>
+          <span class="btn stream__btn stream__btn--soon" aria-disabled="true" title="Пока недоступно"><img class="stream__logo" src="img/logos/vk-music.png" alt="" onerror="this.remove()"><span>VK Музыка</span></span>
+          <span class="btn stream__btn stream__btn--soon" aria-disabled="true" title="Пока недоступно"><img class="stream__logo" src="img/logos/youtube-music.svg" alt="" onerror="this.remove()"><span>YouTube Music</span></span>
+          <a class="btn stream__btn" href="https://zvuk.com/artist/214147739" target="_blank" rel="noopener"><img class="stream__logo" src="img/logos/zvuk.png" alt="" onerror="this.remove()"><span>Звук</span></a>
         </div>
+        <p class="stream__note muted">Spotify, Apple Music, VK Музыка и YouTube Music: пока недоступно</p>
       </div>
     </section>
 
@@ -69,7 +76,7 @@
       <h2 class="section__title">Концерты</h2>
       <div class="tour-empty">
         <p><strong>Ближайших концертов пока нет</strong></p>
-        <p class="muted">Как только будет наш первый концерт, появятся даты, Объявим их в ТГК, и на сайте!</p>
+        <p class="muted">Как только будет наш первый концерт, появятся даты. Объявим их в <a class="text-link" href="https://t.me/lifize" target="_blank" rel="noopener">ТГК</a> и на сайте!</p>
       </div>
     </section>
 
@@ -90,7 +97,7 @@
 
     <section id="band" class="section container">
       <h2 class="section__title">Группа</h2>
-      <p class="band__lead">lifize — андеграунд группа из Самарской области. Состав пока собирается, и мы ищем гитариста и басиста.</p>
+      <p class="band__lead">lifize — андеграунд-группа из Самарской области.</p>
       <div class="grid grid--band">
         <article class="member">
           <div class="member__avatar"><img class="member__photo" src="img/band/solist.jpg" alt="Solist, Guitar" onerror="this.remove()"></div>
@@ -100,7 +107,7 @@
         <article class="member member--empty">
           <div class="member__avatar"><span>?</span><img class="member__photo" src="img/band/guitar.jpg" alt="Guitar" onerror="this.remove()"></div>
           <h3>Гитарка</h3>
-          <p class="muted">Место свободно</p>
+          <p class="muted">Ищем после переезда</p>
         </article>
         <article class="member">
           <div class="member__avatar"><img class="member__photo" src="img/band/drums.jpg" alt="Drums" onerror="this.remove()"></div>
@@ -110,7 +117,7 @@
         <article class="member member--empty">
           <div class="member__avatar"><span>?</span><img class="member__photo" src="img/band/bass.jpg" alt="Bass guitar" onerror="this.remove()"></div>
           <h3>Бас гитарка</h3>
-          <p class="muted">Место свободно</p>
+          <p class="muted">Ищем после переезда</p>
         </article>
       </div>
     </section>
@@ -119,6 +126,11 @@
       <h2 class="section__title">Инфо</h2>
       <div class="info">
         <div class="info__item"><span class="muted">Ближайший релиз</span><strong>Безрассудство, 13 ноября 2026</strong></div>
+        <div class="info__item">
+          <span class="muted">Связь и концерты</span>
+          <strong>Пишите нам по любым вопросам и предложениям выступить</strong>
+          <div class="social"><a class="social__btn" href="https://t.me/lifize" target="_blank" rel="noopener">Написать в ТГК</a></div>
+        </div>
         <div class="info__item">
           <span class="muted">Мы в соцсетях</span>
           <div class="social">
